@@ -1,7 +1,8 @@
 const fs = require("fs");
 const path = require('path');
-const url = path.join('./../');
-const data = fs.readdirSync("./../");
+const fileURL = require("./conf");
+const url = path.join(fileURL);
+const data = fs.readdirSync(fileURL);
 for(let a=0;a<data.length;a++){
     if(data[a].includes(" ")){
         fs.rename(url + data[a], url + data[a].replace(/ /g,""), (err) => {
