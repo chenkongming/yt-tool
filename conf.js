@@ -1,1 +1,1 @@
-module.exports = 'F:\\室內改造\\设计师小李\\'
+module.exports = 'D:\\youtube\\室内改造\\files'
