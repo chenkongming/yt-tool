@@ -11,7 +11,7 @@ const service = axios.create({
 
 const url = path.join(fileURL);
 const data = fs.readdirSync(fileURL);
-const traditionlize= async ()=> {
+const index= async ()=> {
 	for(let a=0;a<data.length;a++){
 		await service.post('/translate', {
 			q:data[a].slice(19).replace(/ /g,'')
@@ -25,4 +25,4 @@ const traditionlize= async ()=> {
 	}
 }
 
-traditionlize()
+index()

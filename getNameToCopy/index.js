@@ -2,7 +2,7 @@
  * 获取文件名并复制
  * */
 const fs = require("fs");
-const fileURL = require("./conf");
+const fileURL = require("../conf");
 const { exec } = require('child_process');
 const iconv = require('iconv-lite');
 

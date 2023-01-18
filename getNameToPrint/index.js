@@ -1,5 +1,5 @@
 /**
- * 读取文件名字
+ * 读取文件名字并打印
  * */
 const fs = require('fs')
 const readDir = fs.readdirSync("./");
