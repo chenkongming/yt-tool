@@ -1,5 +1,5 @@
 /**
- * 更改文件名字
+ * 去掉空格
  * */
 const fs = require("fs");
 const path = require('path');

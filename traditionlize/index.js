@@ -2,7 +2,7 @@ const fs = require("fs");
 // http_server.js
 const axios = require("axios")
 const path = require('path');
-const fileURL = require('conf')
+const fileURL = require('../conf')
 // 创建axios实例s
 const service = axios.create({
 	baseURL: "http://127.0.0.1:4000", // api的base_url  process.env.BASE_API,,注意局域网访问时，不能使用localhost
@@ -13,8 +13,9 @@ const url = path.join(fileURL);
 const data = fs.readdirSync(fileURL);
 const index= async ()=> {
 	for(let a=0;a<data.length;a++){
+		let q = (data[a].slice(19)||data[a]).replace(/ /g,'')
 		await service.post('/translate', {
-			q:data[a].slice(19).replace(/ /g,'')
+			q
 		}).then(res=>{
 			let fileName = res.data
 			fs.rename(url + data[a], url + fileName, (err) => {

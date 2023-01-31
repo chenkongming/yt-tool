@@ -44,7 +44,7 @@ app.post('/translate', (req, res) => {
     url,
   };
   axios(options).then(response=>{
-    if(response.data.trans_result[0].dst){
+    if(response.data.trans_result&&response.data.trans_result[0].dst){
       res.json(response.data.trans_result[0].dst)
     }else {
       res.json('translate failed:',q)

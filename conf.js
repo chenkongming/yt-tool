@@ -1,1 +1,1 @@
-module.exports = 'D:\\youtube\\历史帝\\shorts'
+module.exports = 'D:\\youtube\\电影狗\\shorts\\'
