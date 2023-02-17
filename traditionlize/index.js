@@ -13,7 +13,8 @@ const url = path.join(fileURL);
 const data = fs.readdirSync(fileURL);
 const index= async ()=> {
 	for(let a=0;a<data.length;a++){
-		let q = (data[a].slice(19)||data[a]).replace(/ /g,'')
+		// data[a].slice(19)
+		let q = data[a]
 		await service.post('/translate', {
 			q
 		}).then(res=>{
