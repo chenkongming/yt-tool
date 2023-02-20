@@ -1,1 +1,1 @@
-module.exports = 'D:\\youtube\\tool\\TikTokDownload\\dist\\Download\\post\\卡哇伊是博士奇\\'
+module.exports = 'D:\\youtube\\室内改造\\百万巨星麒麟君《全能住宅改造王》\\版权主张\\'

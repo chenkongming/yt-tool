@@ -21,7 +21,7 @@ const index= async ()=> {
 			let fileName = res.data
 			fs.rename(url + data[a], url + fileName, (err) => {
 				if(err) return console.error(err)
-				console.log('rename success!',data[a])
+				console.log(a+':',data[a]+'\n'+fileName)
 			});
 		})
 	}
